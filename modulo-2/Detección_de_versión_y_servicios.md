@@ -27,3 +27,9 @@ ignoramos cualquier tipo de error que nos de el comando.
 ```bash 
  $ sudo nmap -sS --min-rate 5000 --open -vvv -n -Pn -p- 192.168.1.1 -oG allPorts
 ```
+
+## Reconocimiento a través de los scripts que incorpora nmap
+
+```bash
+  $ nmap -p22 [ip] --script "vuln and safe" -oN smbScan
+```
